@@ -10,9 +10,9 @@ document.getElementById('toggleButton').addEventListener('click', function() {
     }
 });
 
-// Assuming background script will send a message with the prediction number
 chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
-    if (message.prediction) {
-        document.getElementById('prediction').textContent = message.prediction;
+    console.log(message);
+    if (message.data) {
+        document.getElementById('prediction').textContent = message.data.number;
     }
 });
