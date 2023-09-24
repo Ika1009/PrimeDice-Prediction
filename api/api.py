@@ -34,7 +34,7 @@ def predict():
 
 
 if __name__ == "__main__":
-    model = tf.keras.models.load_model("./02-hour_min-sigmoid.keras")
+    model = tf.keras.models.load_model("./models/01-sigmoid.keras")
 
     # Historical data store
     numbers = []

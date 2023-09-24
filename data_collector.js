@@ -7,7 +7,7 @@ function extractDataFromPage() {
     const links = numbersDiv.querySelectorAll('a.Link-q08rh0-0.fObHbq');
     const firstNumber = parseFloat(links[0].textContent); // changed to first link
     const currentUnixTimestamp = Math.floor(Date.now() / 1000);
-    console.log("getting the number: " + firstNumber)
+    //console.log("getting the number: " + firstNumber)
 
     if (!extractedData.length || firstNumber !== extractedData[extractedData.length-1].number) {
         extractedData.push({
