@@ -1,7 +1,7 @@
 console.log("injected");
 
 // Create a new DOM element to display the prediction number
-let predictionElement = document.createElement("h1"); // h1 for big text
+let predictionElement = document.createElement("h3"); // h1 for big text
 predictionElement.style.fontSize = "2em"; // Set font size
 predictionElement.style.color = "white"; // Set text color
 
@@ -39,7 +39,6 @@ function extractDataFromPage() {
         let prediction = response.prediction;
 
         // Update the text content of the predictionElement
-        predictionElement.textContent = `Prediction Number: ${prediction}`;
-        console.log(predictionElement);
+        predictionElement.textContent = ` Prediction Number: ${prediction}`;
     });
 }
