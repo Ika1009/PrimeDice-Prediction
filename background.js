@@ -1,4 +1,4 @@
-let isRunning = true;
+let isRunning = false;
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     if (message.action === "start") {
